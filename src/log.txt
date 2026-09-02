@@ -1,0 +1,27 @@
+--- DOCKER STOP ------------------
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/skeleton/kill?signal=KILL": dial unix /var/run/docker.sock: connect: permission denied
+make: [Makefile:148: docker-stop] Error 1 (ignored)
+--- LOCAL STOP -------------------
+pkill -f "python3 main.py"
+make: [Makefile:59: local-stop] Error 1 (ignored)
+--- LOCAL START ------------------
+23:49:43-I-sys       : Initialized logging 
+23:49:43-I-runtime   : Initialized runtime 
+Mappings: Adding mod files with <class 'app.daas.common.model.File'>
+Mappings: Adding mod environments with <class 'app.daas.common.model.Environment'>
+Mappings: Adding mod guacamole_connections with <class 'app.daas.common.model.GuacamoleConnection'>
+Mappings: Adding mod limits with <class 'app.daas.common.model.RessourceInfo'>
+Mappings: Adding mod instances with <class 'app.daas.objects.object_instance.InstanceObject'>
+Mappings: Adding mod template_applications with <class 'app.daas.objects.object_application.ApplicationObject'>
+Mappings: Adding mod daas_objects with <class 'app.daas.objects.object_machine.MachineObject'>
+Mappings: Adding orm daas_objects with <class 'app.daas.db.db_model.ORMObject'>
+Mappings: Adding orm environments with <class 'app.daas.db.db_model.ORMEnvironment'>
+Mappings: Adding orm guacamole_connections with <class 'app.daas.db.db_model.ORMGuacamoleConnection'>
+Mappings: Adding orm instances with <class 'app.daas.db.db_model.ORMInstance'>
+Mappings: Adding orm files with <class 'app.daas.db.db_model.ORMFile'>
+Mappings: Adding orm template_applications with <class 'app.daas.db.db_model.ORMApplication'>
+Mappings: Adding orm limits with <class 'app.daas.db.db_model.ORMLimit'>
+DEFAULT STARTUP
+--- INIT RUNTIME -----------------
+--- INIT PLUGINS -----------------
+Exception handler: docker.errors.DockerException
